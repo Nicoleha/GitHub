@@ -13,7 +13,7 @@ constructor(private http:HttpClient) {
   this.repos=new Repository(0,0,0,"");
 }
 
-userRequest(){
+reposRequest(){
 
   interface ApiResponse{
       repos:number;
