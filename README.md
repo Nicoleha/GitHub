@@ -1,9 +1,9 @@
 # LIFE Quote
-#### Life quote is an app designed to to create quotes and add the to the other quotes of renown authors, January 28th 2019
+#### The github application is an application where the user enters his/her user name and then can view the information of the account user, February 4th 2019
 
 #### By **NICOLE H.**
 ## Description
-Life quote is an app designed to to create quotes and add the to the other quotes of renown authors. Through life quote the user inputs his/her name and then creates a quote. The user also has an option of upvoting or downvoting a quote basing on the preference.
+
 ## Setup/Installation Requirements
 * Open your computer
 * Connect to internet
@@ -11,7 +11,7 @@ Life quote is an app designed to to create quotes and add the to the other quote
 * There you are!
 The Life quote app can be view on mobile or computer and with ease and it is made for easy learning.
 ## App Specifications
-In this github application, the user enters his/her user name and then can view the repositories of the account user. 
+In this github application, the user enters his/her user name and then can view the repositories of the account user. The user can also be able to view the number of followers and the number of people following him/her.
 ## Known Bugs
 All safe , no bugs will be encoutered on my github app. But in case it is unfortunately encountered kindly reach out.
 ## Technologies Used
