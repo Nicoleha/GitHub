@@ -3,13 +3,13 @@
 
 #### By **NICOLE H.**
 ## Description
-
+The github app is an application designed to help the user search for repositories 
 ## Setup/Installation Requirements
 * Open your computer
 * Connect to internet
-* search for my link: https://nicoleha.github.io/Quotes/
+* search for my link: https://nicoleha.github.io/GitHub/
 * There you are!
-The Life quote app can be view on mobile or computer and with ease and it is made for easy learning.
+The github app can be view on mobile or computer and with ease and it is made for easy learning.
 ## App Specifications
 In this github application, the user enters his/her user name and then can view the repositories of the account user. The user can also be able to view the number of followers and the number of people following him/her.
 ## Known Bugs
