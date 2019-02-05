@@ -1,3 +1,16 @@
-<app-user-form (addUser)="addNewUser($event)"></app-user-form>
-<p>name:{{User.name}}</p>
-<!-- <p>{{repos.repos}}</p> -->
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <app-user-form (add)="addNew($event)"></app-user-form>
+    </div>
+    <div class="col-md-6">
+        <p>name:{{Users.name}}</p>
+        <p>Repositories:</p>
+        <p>Public Gists:</p>
+        <p>Followers:</p>
+        <p>Following:</p>
+        <p>Link:</p>
+    </div>
+</div>
+</div>

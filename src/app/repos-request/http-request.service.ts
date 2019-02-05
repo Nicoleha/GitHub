@@ -7,7 +7,7 @@ import { User } from '../user';
   providedIn: 'root'
 })
 export class HttpRequestService {
-user= new User(0,"")
+user= new User("")
   repos:Repository;
 
 constructor(private http:HttpClient) { 

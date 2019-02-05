@@ -4,15 +4,7 @@ import {User} from '../user'
   providedIn: 'root'
 })
 export class UserRequestService {
-
 user:User;
 
-constructor() { 
-  this.user=new User(0,"");
-}
-
-userRequest(){
-return name
- 
-}
+constructor() {}
 }

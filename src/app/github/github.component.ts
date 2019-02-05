@@ -10,12 +10,14 @@ import { UserRequestService } from '../user-http/user-request.service';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  User=[new User(0,"")]
-  addNewUser(User){
-    this.User.push(User)
-    this.User= new User(0,"")
+  Users:User
+  addNew(user){
+    // this.User.push(User)
+    this.Users= new User(user.name)
 }
-  constructor(private http:HttpClient,private reposRequest:HttpRequestService) { }
+  constructor(private http:HttpClient,private reposRequest:HttpRequestService) { 
+    this.Users= new User("")
+  }
 
   ngOnInit() {
   //   this.quoteService.reposRequest()
