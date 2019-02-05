@@ -14,7 +14,7 @@ constructor(private http:HttpClient) {
   this.repos=new Repository(0,0,0,"");
 }
 
-reposRequest(){
+reposRequest(user){
 
   interface ApiResponse{
       public_repos:number;

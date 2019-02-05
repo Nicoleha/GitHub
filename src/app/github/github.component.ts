@@ -13,6 +13,7 @@ export class GithubComponent implements OnInit {
   User=[new User(0,"")]
   addNewUser(User){
     this.User.push(User)
+    this.User= new User(0,"")
 }
   constructor(private http:HttpClient,private reposRequest:HttpRequestService) { }
 
