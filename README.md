@@ -3,7 +3,7 @@
 
 #### By **NICOLE H.**
 ## Description
-The github app is an application designed to help the user search for repositories on github.
+The github app is an application designed to help the user search for repositories on github. The user is able to view public repositories and see followers and people following.
 ## Setup/Installation Requirements
 * Open your computer
 * Connect to internet
