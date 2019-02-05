@@ -11,7 +11,7 @@ The github app is an application designed to help the user search for repositori
 * There you are!
 The github app can be view on mobile or computer and with ease and it is made for easy learning.
 ## App Specifications
-In this github application, the user enters his/her user name and then can view the repositories of the account user. The user can also be able to view the number of followers and the number of people following him/her.
+In this github application, the user enters his/her user name and then can view the repositories of the account user. The user can also be able to view the number of followers and the number of people following him/her. There is also a link to the github of the username search that directs the user to his/her account where he
 ## Known Bugs
 All safe , no bugs will be encoutered on my github app. But in case it is unfortunately encountered kindly reach out.
 ## Technologies Used
