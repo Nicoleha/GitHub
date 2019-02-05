@@ -7,14 +7,16 @@ import { User } from '../user';
   providedIn: 'root'
 })
 export class HttpRequestService {
-user= new User("")
+// user= new User("")
   repos:Repository;
 
 constructor(private http:HttpClient) { 
   this.repos=new Repository(0,0,0,new Date(),"","");
+
 }
 
 reposRequest(user){
+  // console.log(user)
 
   interface ApiResponse{
       public_repos:number;
@@ -44,7 +46,6 @@ reposRequest(user){
           }
       )
   })
-
   return promise
 }
 }

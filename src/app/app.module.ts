@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 const routes:Routes=[
-  // {path:"users",component:GithubComponent},
-  // {path:"about",component:AboutComponent}
+  {path:"users",component:GithubComponent},
+  {path:"about",component:AboutComponent}
 ]
 
 import { AppRoutingModule } from './app-routing.module';

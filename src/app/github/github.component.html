@@ -5,12 +5,13 @@
         <app-user-form (add)="addNew($event)"></app-user-form>
     </div>
     <div class="col-md-6" id="two">
+        <img src={{repos.avatar_url}} height="200">
         <p appHighlight>User Name:{{Users.name}}</p>
         <p appHighlight>Repositories:{{repos.public_repos}}</p>
         <p appHighlight>Created:{{repos.created_at}}</p>
         <p appHighlight>Followers:{{repos.followers}}</p>
         <p appHighlight>Following:{{repos.following}}</p>
-        <!-- <a href={{repos.url}}>Link</a> -->
+        <a href={{repos.html_url}}>Link</a>
     </div>
 </div>
 </div>
