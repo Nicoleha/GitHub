@@ -14,6 +14,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { GithubComponent } from './github/github.component';
 import { HighlightDirective } from './highlight.directive';
 import { AboutComponent } from './about/about.component';
+import { ChangePipe } from './change.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './about/about.component';
     UserFormComponent,
     GithubComponent,
     HighlightDirective,
-    AboutComponent
+    AboutComponent,
+    ChangePipe
   ],
   imports: [
     BrowserModule,
