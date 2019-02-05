@@ -2,4 +2,9 @@
 color:black;
 font-family: 'Times New Roman', Times, serif;
 padding:20px;}
-ul {background-color: red;}
+ul {background-color: white;
+}
+ul li{display: flex;
+flex-direction: column;}
+
+ul>li>a {color:black;}
