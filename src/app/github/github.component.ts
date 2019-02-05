@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {User}from '../user';
 import {HttpClient} from '@angular/common/http';
 import {HttpRequestService}from '../repos-request/http-request.service'
-
+import { Repository } from '../repository';
 @Component({
   selector: 'app-github',
   templateUrl: './github.component.html',
@@ -20,8 +20,8 @@ export class GithubComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.httpService.reposRequest()
-    // this.repos=this.httpService.repos
+    this.reposRequest.reposRequest()
+    this.repos=this.reposRequest.repos
   }
 
 }
