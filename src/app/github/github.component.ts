@@ -18,7 +18,7 @@ export class GithubComponent implements OnInit {
 }
   constructor(private reposRequest:HttpRequestService) { 
     this.Users= new User("");
-    this.repos=new Repository(0,0,0,new Date());
+    this.repos=new Repository(0,0,0,new Date(),"","");
   }
 
   ngOnInit() {
