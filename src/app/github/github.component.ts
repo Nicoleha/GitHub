@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {User}from '../user';
 import {HttpClient} from '@angular/common/http';
 import {HttpRequestService}from '../repos-request/http-request.service'
+import { UserRequestService } from '../user-http/user-request.service';
 @Component({
   selector: 'app-github',
   templateUrl: './github.component.html',
@@ -12,7 +13,6 @@ export class GithubComponent implements OnInit {
   User=[new User(0,"")]
   addNewUser(User){
     this.User.push(User)
-
 }
   constructor(private http:HttpClient,private reposRequest:HttpRequestService) { }
 

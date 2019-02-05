@@ -36,6 +36,7 @@ reposRequest(){
               // this.quote.quote="Never, never, never give up."
               // this.quote.author="winston churchill"
               reject(error)
+              console.log(error)
           }
       )
   })
