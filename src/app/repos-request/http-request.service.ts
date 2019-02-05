@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import {Repository} from '../repository';
-import {HttpClient} from '@angular/common/http'
-import {environment} from '../../environments/environment'
+import {HttpClient} from '@angular/common/http';
+import {environment} from '../../environments/environment';
+import { User } from '../user';
 @Injectable({
   providedIn: 'root'
 })
 export class HttpRequestService {
-
+user= new User(0,"")
   repos:Repository;
 
 constructor(private http:HttpClient) { 
@@ -16,19 +17,19 @@ constructor(private http:HttpClient) {
 reposRequest(){
 
   interface ApiResponse{
-      repos:number;
+      public_repos:number;
       following:number;
-      follower:number;
-      url:string;
+      followers:number;
+      public_gists:string;
 
   }
   let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>(environment.api_key).toPromise().then(response=>{
+      this.http.get<ApiResponse>('https://api.github.com/users/'+this.user.name+'?access_token=' +environment.api_key).toPromise().then(response=>{
           
-          this.repos.repos=response.repos
+          this.repos.public_repos=response.public_repos
           this.repos.following=response.following
-          this.repos.follower=response.follower
-          this.repos.url=response.url
+          this.repos.followers=response.followers
+          this.repos.public_gists=response.public_gists
 
           resolve()
       },
