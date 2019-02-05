@@ -5,12 +5,12 @@
         <app-user-form (add)="addNew($event)"></app-user-form>
     </div>
     <div class="col-md-6" id="two">
-        <p>User Name:{{Users.name}}</p>
-        <p>Repositories:</p>
-        <p>Public Gists:</p>
-        <p>Followers:</p>
-        <p>Following:</p>
-        <p>Link:</p>
+        <p appHighlight>User Name:{{Users.name}}</p>
+        <p>Repositories:{{repos.public_repos}}</p>
+        <p>Created:{{repos.created_at}}</p>
+        <p>Followers:{{repos.followers}}</p>
+        <p>Following:{{repos.following}}</p>
+        <!-- <a href={{repos.url}}>Link</a> -->
     </div>
 </div>
 </div>

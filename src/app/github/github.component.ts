@@ -10,17 +10,19 @@ import { Repository } from '../repository';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  Users:User
+  Users:User;
+  repos:Repository;
   addNew(user){
     // this.User.push(User)
     this.Users= new User(user.name)
 }
-  constructor(private http:HttpClient,private reposRequest:HttpRequestService) { 
-    this.Users= new User("")
+  constructor(private reposRequest:HttpRequestService) { 
+    this.Users= new User("");
+    this.repos=new Repository(0,0,0,new Date());
   }
 
   ngOnInit() {
-    this.reposRequest.reposRequest()
+    this.reposRequest.reposRequest(this.Users)
     this.repos=this.reposRequest.repos
   }
 

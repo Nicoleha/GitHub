@@ -11,16 +11,16 @@ user= new User("")
   repos:Repository;
 
 constructor(private http:HttpClient) { 
-  this.repos=new Repository(0,0,0,"");
+  this.repos=new Repository(0,0,0,new Date());
 }
 
-reposRequest(){
+reposRequest(user){
 
   interface ApiResponse{
       public_repos:number;
       following:number;
       followers:number;
-      public_gists:string;
+      created_at:Date;
 
   }
   let promise =new Promise((resolve,reject)=>{
@@ -29,7 +29,7 @@ reposRequest(){
           this.repos.public_repos=response.public_repos
           this.repos.following=response.following
           this.repos.followers=response.followers
-          this.repos.public_gists=response.public_gists
+          this.repos.created_at=response.created_at
 
           resolve()
       },

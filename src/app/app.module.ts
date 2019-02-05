@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { GithubComponent } from './github/github.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserFormComponent,
-    GithubComponent
+    GithubComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ export class UserFormComponent implements OnInit {
   @Output() add=new EventEmitter<User>();
   submitForm(){
       this.add.emit(this.newUser);
-    // this.newUser=new User("");
+    this.newUser=new User("");
 }
   
   constructor() { }
